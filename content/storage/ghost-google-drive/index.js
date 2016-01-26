@@ -12,7 +12,7 @@ var Promise     =   require('bluebird'),
 function ghostGoogleDrive(config){
   this.config = config || {};
 };
-askd;fjadls;kfjals;kdfjakls;df
+
 ghostGoogleDrive.prototype.save = function(file){
   var _this = this;
   return new Promise(function (resolve, reject) {
@@ -46,7 +46,7 @@ ghostGoogleDrive.prototype.save = function(file){
           return;
         }
         // make the url looks like a file
-        resolve('/content/images/'+data.id+'.'+data.fileExtension);
+        resolve('/conten/images/'+data.id+'.'+data.fileExtension);
       });
     });
   }); 
