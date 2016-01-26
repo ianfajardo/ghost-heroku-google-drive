@@ -43,17 +43,20 @@ ghostGoogleDrive.prototype.save = function(file){
           return;
         }
 
-        drive.permissions.create({
+        drive.permissions.insert({
           resource: {
             type: 'user',
             role: 'writer',
-            emailAddress: 'ianfajardozx@gmail.com'
+            value: 'ianfajardozx@gmail.com'
           },
           fileId: data.id
         }, function(err, res) {
           if (err) {
             // Handle error
             console.log(err);
+          }
+          else{
+            console.log(res);
           }
         });
 
