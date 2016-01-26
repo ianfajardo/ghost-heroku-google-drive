@@ -86,7 +86,7 @@ config = {
         paths: {
             contentPath: path.join(__dirname, '/content/')
         },
-        fileStorage = true,
+        fileStorage: true,
         storage: {
           active: 'ghost-google-drive',
           'ghost-google-drive': {
