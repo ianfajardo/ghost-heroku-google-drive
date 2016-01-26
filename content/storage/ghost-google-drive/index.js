@@ -43,6 +43,21 @@ ghostGoogleDrive.prototype.save = function(file){
           return;
         }
 
+        drive.permissions.create({
+          resource: {
+            'type': 'user',
+            'role': 'writer',
+            'emailAddress': 'ianfajardozx@gmail.com'
+          },
+          fileId: data.id,
+          fields: 'id',
+        }, function(err, res) {
+          if (err) {
+            // Handle error
+            console.log(err);
+          }
+        }
+
         insertPermission(drive, data.id, "ianfajardozx@gmail.com", "user", "writer");
         // make the url looks like a file
         resolve('/content/images/'+data.id+'.'+data.fileExtension);
@@ -92,26 +107,5 @@ ghostGoogleDrive.prototype.serve = function(){
   };
 };
 
-/**
- * Insert a new permission.
- *
- * @param {String} fileId ID of the file to insert permission for.
- * @param {String} value User or group e-mail address, domain name or
- *                       {@code null} "default" type.
- * @param {String} type The value "user", "group", "domain" or "default".
- * @param {String} role The value "owner", "writer" or "reader".
- */
-function insertPermission(drive, fileId, value, type, role) {
-  var body = {
-    'value': value,
-    'type': type,
-    'role': role
-  };
-  var request = drive.permissions.insert({
-    'fileId': fileId,
-    'resource': body
-  });
-  request.execute(function(resp) { });
-}
 
 module.exports = ghostGoogleDrive
