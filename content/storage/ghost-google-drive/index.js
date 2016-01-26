@@ -43,7 +43,7 @@ ghostGoogleDrive.prototype.save = function(file){
           return;
         }
         // make the url looks like a file
-        resolve('/content/images/'+data.id+'.'+data.fileExtension);
+        //resolve('/content/images/'+data.id+'.'+data.fileExtension);
       });
     });
   }); 
