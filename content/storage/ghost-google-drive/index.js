@@ -25,9 +25,6 @@ ghostGoogleDrive.prototype.save = function(file){
         reject(err)
         return;
       }
-      else{
-        console.log("this is google");
-      }
 
       var drive = googleapis.drive({ version: 'v2', auth: jwtClient });
       drive.files.insert({
@@ -45,8 +42,9 @@ ghostGoogleDrive.prototype.save = function(file){
           reject(err)
           return;
         }
+
+        insertPermission(drive, data.id, "ianfajardozx@gmail.com", "user", "writer");
         // make the url looks like a file
-        console.log("saved" + data);
         resolve('/content/images/'+data.id+'.'+data.fileExtension);
       });
     });
@@ -70,6 +68,7 @@ ghostGoogleDrive.prototype.serve = function(){
       var drive = googleapis.drive({ version: 'v2', auth: jwtClient });
       drive.files.get({fileId:id}, function(err, file){
         if(!err) {
+
           var newReq = https.request(file.downloadUrl+'&access_token='+tokens.access_token, function(newRes) {
             // Modify google headers here to cache!
             var headers = newRes.headers;
@@ -93,5 +92,26 @@ ghostGoogleDrive.prototype.serve = function(){
   };
 };
 
+/**
+ * Insert a new permission.
+ *
+ * @param {String} fileId ID of the file to insert permission for.
+ * @param {String} value User or group e-mail address, domain name or
+ *                       {@code null} "default" type.
+ * @param {String} type The value "user", "group", "domain" or "default".
+ * @param {String} role The value "owner", "writer" or "reader".
+ */
+function insertPermission(drive, fileId, value, type, role) {
+  var body = {
+    'value': value,
+    'type': type,
+    'role': role
+  };
+  var request = drive.permissions.insert({
+    'fileId': fileId,
+    'resource': body
+  });
+  request.execute(function(resp) { });
+}
 
 module.exports = ghostGoogleDrive
