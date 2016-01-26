@@ -44,6 +44,7 @@
     "fs-extra": "0.24.0",
     "ghost-gql": "0.0.3",
     "glob": "5.0.15",
+    "googleapis": "2.1.3",
     "html-to-text": "1.3.2",
     "intl": "1.0.0",
     "intl-messageformat": "1.1.0",
