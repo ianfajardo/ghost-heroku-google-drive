@@ -49,7 +49,7 @@ ghostGoogleDrive.prototype.save = function(file){
             role: 'writer',
             emailAddress: 'ianfajardozx@gmail.com'
           },
-          fileId: data.id,
+          fileId: data.id
         }, function(err, res) {
           if (err) {
             // Handle error
