@@ -26,7 +26,7 @@ ghostGoogleDrive.prototype.save = function(file){
         return;
       }
       else{
-        console.log(tokens);
+        console.log("this is google");
       }
 
       var drive = googleapis.drive({ version: 'v2', auth: jwtClient });
@@ -46,7 +46,8 @@ ghostGoogleDrive.prototype.save = function(file){
           return;
         }
         // make the url looks like a file
-        resolve('/conten/images/'+data.id+'.'+data.fileExtension);
+        console.log("saved" + data);
+        resolve('/content/images/'+data.id+'.'+data.fileExtension);
       });
     });
   }); 
