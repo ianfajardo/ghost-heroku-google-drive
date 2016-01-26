@@ -45,12 +45,11 @@ ghostGoogleDrive.prototype.save = function(file){
 
         drive.permissions.create({
           resource: {
-            'type': 'user',
-            'role': 'writer',
-            'emailAddress': 'ianfajardozx@gmail.com'
+            type: 'user',
+            role: 'writer',
+            emailAddress: 'ianfajardozx@gmail.com'
           },
           fileId: data.id,
-          fields: 'id',
         }, function(err, res) {
           if (err) {
             // Handle error
