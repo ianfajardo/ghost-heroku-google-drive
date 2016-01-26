@@ -29,7 +29,7 @@ config = {
             host: '0.0.0.0',
             port: process.env.PORT
         },
-        fileStorage: false,
+        fileStorage: true,
         storage: {
           active: 'ghost-google-drive',
           'ghost-google-drive': {
