@@ -12,7 +12,6 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://japan-blog.herokuapp.com',
-        fileStorage: false,
         mail: {},
         database: {
             client: 'postgres',
