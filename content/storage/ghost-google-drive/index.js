@@ -55,7 +55,7 @@ ghostGoogleDrive.prototype.save = function(file){
             // Handle error
             console.log(err);
           }
-        }
+        });
 
         // make the url looks like a file
         resolve('/content/images/'+data.id+'.'+data.fileExtension);
