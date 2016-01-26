@@ -58,7 +58,6 @@ ghostGoogleDrive.prototype.save = function(file){
           }
         }
 
-        insertPermission(drive, data.id, "ianfajardozx@gmail.com", "user", "writer");
         // make the url looks like a file
         resolve('/content/images/'+data.id+'.'+data.fileExtension);
       });
