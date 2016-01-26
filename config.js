@@ -31,8 +31,8 @@ config = {
         },
 
         storage: {
-          active: 'ghost-google-drive',
-          'ghost-google-drive': {
+          active: 'ghost-google-drive2',
+          'ghost-google-drive2': {
             key: {
                     "private_key_id": "ed7344ff82fdac856948144dd1c93a1650a181af",
                       "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDfaMnnNesrUnVm\nn1zD+IV/iwoFANVjPojIMmvlIIP3q2GI/j0hAG4KDSxY4q65L+I6mvmTOZBHSXWe\nVZI2GfIbSLzTDsqu9ZysZAI8N+fkOEUwU0r6P4wvFw/NaAT2By6w1Tik894aVxf5\n4zOSOSZdIGVmRGchoFVD0e0XIzfcWFNsAGbwQxLsXRPyC0hEWOfUzVdQG4xd1XIp\ntJq5nIry5yDEmczDrQ9J+7v93zbJcQTY4DyQohOXy3JOjbm1pqS3jOm4rtqe/YS/\n8kAwCzJOdrTqeFfv5WsLzVhMP1xelS6dkuYtCn58qyjEDA0Rs9LOkmxEDGTENKyc\nwnNt4B0FAgMBAAECggEBAMhIiCEInIClFuzeV2q0pPG3s07S9XpYeIWJdmLeKJDj\nirgmvKSWXxARyT0SU3Nfsx+5CZ9sDqVp/NDqg/6OehbtuaI484mwVTnTGpHjyLc3\nnwd41JHOYJ1ivl72LuRlgf0z2ek/W1Ef3TW/8t7W70azoVPyZManl2kKjNOeVhjp\nRVoABJoy74rlzb0prUcgOngozsTuIEaoidh8khkGpi0HLxZp8LiHJUn1F/Gi6imO\nFPpz/gqWxH1WMMOyiTeiNpndGqUnC5qjCiJLKglGwnzZJGkVG4iSuRCW+wR6OAqP\nfh/qMfcWKbQPPjoIICQicG96+mFXUNxg7ntCJ/X2LIECgYEA85e6SafAgsMhaLD5\nkb6r9LWsN00fK5QxYRCioKApvnHu30vaipXNfokJR0oVETSBdeW9eNmeDYwVrQQQ\nsq3CpRZoxC5nKV8G5EXXVpr6vNfXqZfY52gKfw4bR1lEbuObrEa9VhojuUXKCrM0\n3AuxA38CW6LN+7ynxZpCXyZ4GGUCgYEA6snieIOMTXqUuTcBrS1Br3BrwYJLsjLw\nOXnpfc6Wi2z6LCP0lOYoiEYq5TqSgGbW8kvmu53cv0wKn3C0TJoVE8o9ZQCDwf3f\n4zO51ztqUIZHRE44QgBTsmwHbQqbvwZMhjuXao1zwguzEsrdy9oZx1MIneyuhm7x\noiAmAFk1mCECgYA/jRQy5ysYcmQi9hkGZyJho4wcmWhKbE09r6NeGKsLXpodc6K+\niTqliob7LF62sGYeJiP6hXvwuN1m2CqrEx43B9OpaxnK91nK8FWv6JsF7aH8Qvt5\n0/D5GOsRAD8UVxlkJsh60DMFwSlnBT4DMqGp8dbhpWXsCVoT+ZzbSiQG6QKBgBF3\n682jm/C3yhDtssY7s8Nlzd6b3x3nBFCCbYjasgC1nvdhxXS+mw1oixB7ByNeg2eL\nliMnX6Er+y5ZqFB6tk6+oUq+ew8X4Gx7ELyeww4yr2K5nx3qAFAqEXNfcq8HvPHP\nxTg8RfyN+kjPpyjflUNrPhzh2ypNXtT9J1anTIGBAoGABe4CcBlLJqT0lrAOnxX3\n1tsOND5lYyV9jpa5zb8p/VQAr3kB0vCtRA5bMCoI10xP8BPLluBMyKVaXGRjynVc\nBXxiv9jzP+ZjM5IEwLYefWJ8j/T6jJpZAu3nvmr2j2f6wQsg58U53Q62Zd9XbMgd\nJuXcjvo7NxshPaJoD8iatyU=\n-----END PRIVATE KEY-----\n",
