@@ -2,6 +2,7 @@ pids
 logs
 results
 
+config.js
 npm-debug.log
 node_modules
 bower_components
